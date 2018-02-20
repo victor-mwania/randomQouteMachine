@@ -1,0 +1,47 @@
+var $colors=$(['#3A4B5B','#9B5094','#99C436', '#2562A8','#84221D','#33EDF7', '#93821F','6A605C','#B9EABA' ]);
+$('#new_qoute').click(function(event){
+$.ajax({
+    headers:{
+        "X-Mashape-Key":"H2YE0mH3wKmshcDPCpyWTueHAXW8p1MTkozjsniSjRwYHwiQSS",
+        "Accept": "application/json",
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    url:'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=10'
+    ,
+    data:{
+        format:'json',
+    },
+    success:function(response){
+           console.log(response);
+    },
+    type:'GET' 
+});
+});
+
+
+getJSon
+
+var api="H2YE0mH3wKmshcDPCpyWTueHAXW8p1MTkozjsniSjRwYHwiQSS";
+var url="https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=10";
+
+$.getJSON(url, {"mashape-key":api}, function(response){
+    console.log(response.quote);
+});
+
+
+
+
+var $colors=$(['#3A4B5B','#9B5094','#99C436', '#2562A8','#84221D','#33EDF7', '#93821F','6A605C','#B9EABA' ]);
+$('#new_qoute').click(function(event){
+    $("#quote_body").empty();
+    var api="H2YE0mH3wKmshcDPCpyWTueHAXW8p1MTkozjsniSjRwYHwiQSS";
+    var url="https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=10";
+    
+    $.getJSON(url, {"mashape-key":api}, function(response){
+        var $text=response.quote;
+        var $qoute_author=response.author;
+        
+        $('#quote_body').append($text);
+        $('#quote_author').append($qoute_author);
+    });
+});

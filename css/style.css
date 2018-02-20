@@ -1,0 +1,33 @@
+.background{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.quote_box{
+  width: 45%;
+  height: 100%;
+  background-color: aliceblue;
+}
+.quote{
+    font-size: 30px;
+  
+}
+
+.author{
+    text-align: right;
+}
+
+.social_button{
+    margin-left: 10px;
+}
+.button{
+float: left;
+font-size: 30px;
+margin-right: 5px;
+margin-left:0px;
+}
+ .btn{
+ float: right;
+ margin-right: 10px;
+ }
