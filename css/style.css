@@ -5,21 +5,30 @@
     text-align: center;
 }
 .quote_box{
-  width: 45%;
+  width: 40%;
   height: 100%;
   background-color: aliceblue;
+  margin-left: 28%;
+  margin-top: 270px;
+  border-style: solid;
+  border-radius: 5px;
 }
 .quote{
-    font-size: 30px;
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
   
 }
 
 .author{
     text-align: right;
+    margin-right: 5px;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .social_button{
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .button{
 float: left;
@@ -29,5 +38,6 @@ margin-left:0px;
 }
  .btn{
  float: right;
- margin-right: 10px;
+ margin-right: 0px;
+ margin-top: 7px;
  }

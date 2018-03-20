@@ -4,8 +4,13 @@ $(document).ready(function() {
     loadQuote();
 });
  function loadQuote(){
+   var randomColor=Math.floor((Math.random() * 10) + 1);
+   for(var i=0; i<$colors.length;i++){
+       
+   }
     $("#quote_body").empty();
     $("#quote_author").empty();
+
     var api="H2YE0mH3wKmshcDPCpyWTueHAXW8p1MTkozjsniSjRwYHwiQSS";
     var url="https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=10";
     
