@@ -1,5 +1,5 @@
 .background{
-    background-color: aqua;
+    background-color:#3A4B5B;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -40,4 +40,11 @@ margin-left:0px;
  float: right;
  margin-right: 0px;
  margin-top: 7px;
+ color: #3A4B5B;
+ border: 0 none;
+ font-weight: 700;
+ letter-spacing:1px;
+ background-color: #3A4B5B;
+ color:rgb(28, 31, 36);
+ font-family: fantasy;
  }

@@ -1,13 +1,18 @@
-
-var $colors=$(['#3A4B5B','#9B5094','#99C436', '#2562A8','#84221D','#33EDF7', '#93821F','6A605C','#B9EABA' ]);
 $(document).ready(function() {
     loadQuote();
 });
+
+$("#new_quote").click( function () {
+    loadQuote()
+});
+$("#tweet_quote").click( function () {
+    tweet_qoute()
+});
+$("#tumblr").click( function () {
+    tumblr ();
+}) 
+
  function loadQuote(){
-   var randomColor=Math.floor((Math.random() * 10) + 1);
-   for(var i=0; i<$colors.length;i++){
-       
-   }
     $("#quote_body").empty();
     $("#quote_author").empty();
 
@@ -28,4 +33,16 @@ $(document).ready(function() {
         });
 }
 
-$("#new_quote").click(function(){loadQuote()});
+
+// tweet qoute
+function tweet_qoute(){
+    console.log("tweet");
+}
+
+// tumblr
+function tumblr(){
+    console.log("Tumblr");
+}
+
+
+// add tweet functio and tumblr
